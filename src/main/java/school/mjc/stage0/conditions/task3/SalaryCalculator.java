@@ -5,6 +5,7 @@ public class SalaryCalculator {
         double salaryAfterTaxes = 0;
         if (salary < 0) {
             System.out.println("Wrong input!");
+            return;
         } else if (salary <= 10000) {
             salaryAfterTaxes = salary - (salary * 0.15);
         } else if (salary > 10000 && salary <= 20000) {
@@ -12,6 +13,6 @@ public class SalaryCalculator {
         } else {
             salaryAfterTaxes = salary - (salary * 0.20);
         }
-        System.out.println("Salary after taxes: " + salaryAfterTaxes);
+        System.out.println(salaryAfterTaxes);
     }
 }
